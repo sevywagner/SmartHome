@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div>
+		<h1>Wagner Web</h1>
+	</div>
+	<form action='/lights' method='post'>
+		<button type='submit'>Turn on lights</button>
+		<input type='hidden' name="mode" value="on" />
+	</form>
+	<form action='/lights' method='post'>
+		<button type='submit'>Turn off lights</button>
+		<input type='hidden' name="mode" value="off" />
+	</form>
+{% endblock %}
